@@ -1,91 +1,73 @@
 body {
     font-family: 'Segoe UI', sans-serif;
     background: linear-gradient(to right, #cce0ff, #e6ffe6);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    min-height: 100vh;
+    display: grid;
+    place-items: start center;
     padding-top: 40px;
-  }
-  
-  .container {
-    background-color: #fff;
+}
+
+.container {
+    background: #fff;
     padding: 30px;
     border-radius: 12px;
     width: 400px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2, h3 {
-    text-align: center;
-  }
-  
-  label {
+}
+
+h2, h3 { text-align: center; }
+
+label {
     display: block;
-    margin-top: 10px;
+    margin: 10px 0 5px;
     font-weight: bold;
-  }
-  
-  input, select {
+}
+
+input, select {
     width: 100%;
     padding: 8px;
-    margin-top: 5px;
+    margin-bottom: 10px;
     border-radius: 6px;
     border: 1px solid #ccc;
     box-sizing: border-box;
     transition: 0.3s;
-  }
-  
-  input:focus, select:focus {
-    border-color: #28a745;
-  }
-  
-  .buttons {
+}
+
+input:focus, select:focus { border-color: #28a745; }
+
+.buttons {
     display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-  }
-  
-  button {
+    gap: 4%;
+    margin: 15px 0;
+}
+
+button {
     padding: 10px;
-    width: 48%;
+    flex: 1;
     border: none;
     border-radius: 6px;
-    font-size: 15px;
     cursor: pointer;
     transition: 0.3s;
-  }
-  
-  button[type="submit"] {
-    background-color: #28a745;
+}
+
+button[type="submit"] {
+    background: #28a745;
     color: white;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #218838;
-  }
-  
-  #clearBtn {
-    background-color: #dc3545;
+}
+
+button[type="submit"]:hover { background: #218838; }
+
+#clearBtn {
+    background: #dc3545;
     color: white;
-  }
-  
-  #clearBtn:hover {
-    background-color: #c82333;
-  }
-  
-  .message {
-    text-align: center;
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
-  .user-list {
-    margin-top: 20px;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
+}
+
+#clearBtn:hover { background: #c82333; }
+
+.message, .user-list { margin-top: 20px; }
+.message { font-weight: bold; text-align: center; }
+
+ul {
+    list-style: none;
+    padding: 0;
+}
