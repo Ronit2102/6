@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Registration System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <form id="regForm">
+      <h2>Register for an Event</h2>
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" required>
+
+      <label for="age">Age</label>
+      <input type="number" id="age" min="1" required>
+
+      <label for="event">Select Event</label>
+      <select id="event">
+        <option value="Coding Bootcamp">Coding Bootcamp</option>
+        <option value="Art Workshop">Art Workshop</option>
+        <option value="Robotics Seminar">Robotics Seminar</option>
+        <option value="Music Night">Music Night</option>
+      </select>
+
+      <div class="buttons">
+        <button type="submit">Register</button>
+        <button type="button" id="clearBtn">Clear</button>
+      </div>
+
+      <p id="msg" class="message"></p>
+    </form>
+
+    <div id="registeredUsersList" class="user-list">
+      <h3>Registered Users:</h3>
+      <ul id="userList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
